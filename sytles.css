@@ -5,15 +5,32 @@ body {
   justify-content: center;
   height: 100%;
 }
-
+p{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.container{
+    display: flex;
+    align-items: center;
+}
 .container:hover
 .circle-marker-success::before {
   background: transparent;
-  border: 3px solid #10e00f !important;
+  border: 3px solid #198754 !important;
+}
+.container:hover 
+.circle-marker-warning::before{
+    background: transparent;
+    border: 3px solid #ffc107 !important;
+}
+.container:hover
+.circle-marker-danger::before{
+    background: transparent;
+    border: 3px solid #dc3545 !important;
 }
 
 .circle-marker-success::before {
-  background: #10e00f;
+  background: #198754;
   border: 3px solid transparent;
   border-radius: 100%;
   content: "";
@@ -22,3 +39,23 @@ body {
   width: 15px;
   transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
 }
+.circle-marker-warning::before {
+    background: #ffc107;
+    border: 3px solid transparent;
+    border-radius: 100%;
+    content: "";
+    display: block;
+    height: 15px;
+    width: 15px;
+    transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+  .circle-marker-danger::before {
+    background: #dc3545;
+    border: 3px solid transparent;
+    border-radius: 100%;
+    content: "";
+    display: block;
+    height: 15px;
+    width: 15px;
+    transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
