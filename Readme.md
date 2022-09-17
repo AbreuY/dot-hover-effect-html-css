@@ -1,3 +1,7 @@
+## Example
+
+![Screenshot](/example.gif)
+
 ## In order to run this project use the following command:
 
 ```sh
